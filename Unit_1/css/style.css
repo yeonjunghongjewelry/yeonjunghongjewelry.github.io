@@ -1,7 +1,21 @@
 body {
-	background-color: purple;
+	background-color: lightgrey;
 }
-
+h1 {
+	text-align: center;
+}
 h1 {
 	color: white;
 }
+h1.sansserif {
+	font-family: "verdana";
+}
+p {
+	text-align: center;
+}
+ p {
+ 	color: white;
+ }
+ p.serif {
+ 	font-family: garamond;
+ 	 }
