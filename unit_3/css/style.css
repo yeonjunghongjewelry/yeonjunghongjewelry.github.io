@@ -1,8 +1,31 @@
+*{
+	margin:10;
+	padding:10;
+	box-sizing:border-box;
+}
 body {
-	background: url("image/yeonjungtactilitypsycholog.jpg");
-	background-size: cover;
+	margin:20px 60px;
+	background-color: ;
 	font-family: Arial;
 }
 p {
-	font-size: 20pt;
+	font-size: 32pt;
+	font-weight: bold;
  }
+img {
+	display: block;
+	width:100%;
+
+}
+#logo{
+	color:black;
+}
+.navlink{
+	color:gray;
+	font-size: 10pt;
+	text-align: left;
+	text-transform: uppercase;
+}
+.item01{
+	color:purple;
+}
