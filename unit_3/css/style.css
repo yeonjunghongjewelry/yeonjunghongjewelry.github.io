@@ -23,13 +23,16 @@ img {
 	color:black;
 	font-family: Helvetica;
 }
+nav {
+	text-align: right;
+}
 .navlink{
 	color:gray;
 	font-family: Arial;
 	font-size: 10pt;
-	text-align: left;
 	text-transform: uppercase;
 	letter-spacing: 2px;
+	padding:10px 10px;
 }
 .item01{
 	color:purple;
