@@ -6,11 +6,13 @@
 body {
 	margin:20px 60px;
 	background-color: ;
-	font-family: Arial;
 }
-p {
-	font-size: 32pt;
+
+#intro {
+	font-family: Verdana;
+	font-size: 24pt;
 	font-weight: bold;
+	color: grey;
  }
 img {
 	display: block;
@@ -19,12 +21,15 @@ img {
 }
 #logo{
 	color:black;
+	font-family: Helvetica;
 }
 .navlink{
 	color:gray;
+	font-family: Arial;
 	font-size: 10pt;
 	text-align: left;
 	text-transform: uppercase;
+	letter-spacing: 2px;
 }
 .item01{
 	color:purple;
