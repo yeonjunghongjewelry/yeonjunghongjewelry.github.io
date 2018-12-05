@@ -1,34 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Do+Hyeon|Julius+Sans+One);
+
 *{
 	margin:10;
 	padding:10;
 	box-sizing:border-box;
 }
 body {
-	margin:20px 60px;
+	margin:10px 60px;
 	background-color: ;
 }
 
 #intro {
-	font-family: Verdana;
+	font-family: 'Crimson Text', serif;
 	font-size: 24pt;
-	font-weight: bold;
-	color: grey;
+	font-weight: ;
+	color: black;
+	padding: 50px 50px;
  }
 img {
 	display: block;
-	width:100%;
+	width:45%;
 
 }
 #logo{
 	color:black;
 	font-family: Helvetica;
 }
+#name{
+	font-family: 'Crimson Text', serif;
+	font-size: 12pt; 
+	font-weight: 200;
+}
 nav {
 	text-align: right;
 }
 .navlink{
 	color:gray;
-	font-family: Arial;
+	font-family: 'Julius Sans One', sans-serif;
 	font-size: 10pt;
 	text-transform: uppercase;
 	letter-spacing: 2px;
