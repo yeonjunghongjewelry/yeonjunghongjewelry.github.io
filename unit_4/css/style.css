@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Do+Hyeon|Julius+Sans+One);
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+	margin:10px 60px;
+	background-color: ;
+}
+.clear_float:after {
+	content:"";
+	display: block;
+	clear: both;}
+
+#intro {
+	font-family: 'Crimson Text', serif;
+	font-size: 24pt;
+	font-weight: ;
+	color: black;
+	padding: 50px 50px;
+ }
+img {
+	display: block;
+	width:100%;
+
+}
+#logo{
+	color:black;
+	font-family: Helvetica;
+}
+#name{
+	font-family: 'Crimson Text', serif;
+	font-size: 12pt; 
+	font-weight: 200;
+}
+nav {
+	text-align: right;
+}
+.navlink{
+	color:gray;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 10pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding:10px 10px;
+}
+.item01{
+	position: relative;
+	color:purple;
+	display: block;
+	width: 33.333%;
+	float: left;
+}
+.item01 p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+footer {
+	padding: 1em 0;
+}
