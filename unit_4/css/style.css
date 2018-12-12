@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Do+Hyeon|Julius+Sans+One);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Julius+Sans+One);
 
 *{
 	margin:0;
@@ -24,6 +24,7 @@ body {
 img {
 	display: block;
 	width:100%;
+	padding:.8em .8em;
 
 }
 #logo{
@@ -48,7 +49,10 @@ nav {
 }
 .item01{
 	position: relative;
-	color:purple;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color:white;
+	letter-spacing: 1.5px;
 	display: block;
 	width: 33.333%;
 	float: left;
