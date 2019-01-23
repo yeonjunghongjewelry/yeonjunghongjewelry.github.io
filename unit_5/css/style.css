@@ -78,7 +78,7 @@ nav {
 	display:flex;
 	justify-content: center;
 	align-items: center;
-	transition: top ease-in-out 100ms; 
+	
 }
 .item01:hover p{
 	top:0;

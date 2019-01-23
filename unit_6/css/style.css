@@ -1,6 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Julius+Sans+One);
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+body {
+	margin:10px 60px;
+	background-color: ;
+}
+.clear_float:after {
+	content:"";
+	display: block;
+	clear: both;}
+
+#logo{
+	color:black;
+	font-family: Helvetica;
+}
+#name{
+	font-family: 'Crimson Text', serif;
+	font-size: 12pt; 
+	font-weight: 200;
+}
+nav {
+	text-align: right;
+}
+.navlink{
+	color:gray;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 10pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding:10px 10px;
+}
 #two_column {
-	background-color: #fff;
-	border: 1px ;
+	bac
+	border: 1px ;kground-color: #fff;
 	padding: 20px;
 }
 
@@ -8,7 +43,7 @@
 	border: 1px solid red;
 	display: inline-block;
 	width: 40%;
-}
+}     
 
 #right {
 	border: 1px solid black;
@@ -18,5 +53,23 @@
 }
 
 .image_1 {
+	top:50%;
 	width: 100%;
+}
+.description {
+	padding: 10px 20px;
+	font-family: 'Crimson Text', serif;
+}
+#title {
+	font-size: 14pt;
+
+}
+
+#medium {
+	font-size: 12pt;
+	font-family: serif;
+
+}
+@media only screen and (max-width: 480px) {
+
 }
