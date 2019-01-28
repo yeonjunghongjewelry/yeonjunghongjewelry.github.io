@@ -6,20 +6,16 @@
 	box-sizing:border-box;
 }
 body {
-	margin:10px 60px;
+	margin:15px 20px;
 	background-color: ;
 }
-.clear_float:after {
-	content:"";
-	display: block;
-	clear: both;}
+
 
 #intro {
-	font-family: 'Crimson Text', serif;
-	font-size: 24pt;
-	font-weight: ;
-	color: black;
-	padding: 50px 50px;
+
+ }
+ section {
+ 	display: block;
  }
 img {
 	display: block;
@@ -27,20 +23,25 @@ img {
 	padding: 10px;
 
 }
+
 #logo{
 	color:black;
 	font-family: Helvetica;
 }
+
 #name{
 	font-family: 'Crimson Text', serif;
 	font-size: 12pt; 
 	font-weight: 200;
 }
+
 nav {
-	text-align: right;
-	width:57%;
-	float:right;
+	width:50%;
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
 }
+
 .navlink{
 	color:gray;
 	font-family: 'Julius Sans One', sans-serif;
@@ -53,6 +54,7 @@ nav {
 	float:left;
 	cursor:pointer;
 }
+
 .navlink div{
 	position: absolute;
 	top:30px;
@@ -61,13 +63,16 @@ nav {
 	overflow: hidden;
 	transition:max-height 500ms;
 }
+
 .navlink:hover div {
 	max-height:500px;
 }
+
 .navlink div a {
 	display: block;
 
 }
+
 .item01{
 	position: relative;
 	font-family: 'Raleway', sans-serif;
@@ -127,5 +132,16 @@ footer {
 	padding: 1em 0;
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 14px;
+
+}
+
+@media only screen and (max-width:1070px) {
+	nav {
+		width:100%;
+		float: none;
+	}
+
+	 }
+	}
 
 }
