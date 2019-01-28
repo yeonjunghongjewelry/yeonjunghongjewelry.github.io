@@ -45,6 +45,12 @@ nav {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding:10px 10px;
+	position: relative;
+}
+.navlink div{
+	position: absolute;
+	top:10px;
+	left:10px ;
 }
 .item01{
 	position: relative;

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Julius+Sans+One);
+
 *{
 	margin:0;
 	padding:0;
@@ -13,6 +14,19 @@ body {
 	display: block;
 	clear: both;}
 
+#intro {
+	font-family: 'Crimson Text', serif;
+	font-size: 24pt;
+	font-weight: ;
+	color: black;
+	padding: 50px 50px;
+ }
+img {
+	display: block;
+	width:100%;
+	padding: 10px;
+
+}
 #logo{
 	color:black;
 	font-family: Helvetica;
@@ -24,6 +38,8 @@ body {
 }
 nav {
 	text-align: right;
+	width:57%;
+	float:right;
 }
 .navlink{
 	color:gray;
@@ -32,11 +48,66 @@ nav {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	padding:10px 10px;
+	position: relative;
+	display: inline-block;
+	float:left;
+	cursor:pointer;
+}
+.navlink div{
+	position: absolute;
+	top:30px;
+	left:10px ;
+	max-height:0;
+	overflow: hidden;
+	transition:max-height 500ms;
+}
+.navlink:hover div {
+	max-height:500px;
+}
+.navlink div a {
+	display: block;
+
+}
+.item01{
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	color:white;
+	letter-spacing: 1.5px;
+	display: block;
+	width: 33.333%;
+	float: left;
+	height: 0;
+	padding-bottom: 24.25%;
+	overflow: hidden;
+	border: 10px solid white;
+}
+.item01 img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	height:100%;
+	width:auto;
+}
+.item01 p{
+	position: absolute;
+	top: -100%;
+	left: 0%;
+	background: rgba(0, 0, 0, 0.5);
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.item01:hover p{
+	top:0;
 }
 #two_column {
-	bac
-	border: 1px ;kground-color: #fff;
-	padding: 20px;
+	border: 1px solid blue;
+	padding: 60px;
 }
 
 #left {
@@ -50,26 +121,11 @@ nav {
 	display: inline-block;
 	width: 40%;
 	vertical-align: top;
+	float: right;
 }
-
-.image_1 {
-	top:50%;
-	width: 100%;
-}
-.description {
-	padding: 10px 20px;
-	font-family: 'Crimson Text', serif;
-}
-#title {
-	font-size: 14pt;
-
-}
-
-#medium {
-	font-size: 12pt;
-	font-family: serif;
-
-}
-@media only screen and (max-width: 480px) {
+footer {
+	padding: 1em 0;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 14px;
 
 }
