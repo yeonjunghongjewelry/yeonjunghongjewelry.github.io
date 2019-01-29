@@ -14,19 +14,7 @@ body {
 	display: block;
 	clear: both;}
 
-#intro {
-	padding:28px 30px;
 
- }
- section {
- 	display: block;
- }
-img {
-	display: block;
-	width:100%;
-	padding: 10px;
-
-}
 
 #logo{
 	color:black;
@@ -40,9 +28,9 @@ img {
 }
 
 nav {
-	width:50%;
+
 	float: right;
-	padding-top: 20px;
+
 }
 
 .navlink{
@@ -59,9 +47,11 @@ nav {
 }
 
 .navlink div{
+	color: gray;
 	position: absolute;
-	top:30px;
-	left:10px ;
+	top:35px;
+	left:60px ;
+
 	max-height:0;
 	overflow: hidden;
 	transition:max-height 500ms;
@@ -74,8 +64,23 @@ nav {
 .navlink div a {
 	display: block;
 
+
 }
 
+#intro {
+	padding:28px 30px;
+
+ }
+ section {
+ 	display: block;
+ 	padding-top: 20px;
+ }
+img {
+	display: block;
+	width:100%;
+	padding: 10px;
+
+}
 .item01{
 	position: relative;
 	font-family: 'Raleway', sans-serif;
