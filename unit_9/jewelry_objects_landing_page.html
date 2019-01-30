@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Yeonjung Hong Jewelry</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/scripts.js"></script>
 </head>
 
 <body>
-	<header>
-		<a class="logo" href=jewelry_objects_landing_page.html>
+	<header class="clear_float">
+		<a class="logo" href="jewelry_objects_landing_page.html">
 			<img src="image/logo_name.jpg" alt="Yeonjung Hong Jewelry" title="Yeonjung Hong Jewelry">
 		</a>
+		<button id="menu_button">
+			menu 
+		</button>
 		<nav>
 			<div class="navlink">
 				<a class="navlink" href="jewelry_objects_landing_page.html">Jewelry Objects</a>
@@ -24,11 +28,10 @@
 			</div>
 			<a class="navlink" href="design_and_sketch.html">Design & Sketch</a>
 			<a class="navlink" href="cad_cam.html">CAD/CAM</a>
-			<a class="navlink" href="Test">About</a>
+			<a class="navlink" href="about.html">About</a>
 		</nav>
 	</header>
-	<section>
-		<p id="intro"></p>
+
 	<section class="clear_float">
 
 		<a class="item01" href="meditation.html">
@@ -58,7 +61,7 @@
 		<a class="item01" href="">
 			<img src="image/intimate_objects_1.jpg" alt="intimate objects" title="Yeonjung Hong 2016">
 			<p>Intimate Objects</p>
-		<a class="item01" href="">
+		<a class="item01" href="" id="knot_not">
 			<img src="image/knotnot.jpg" alt="knot not" title="Yeonjung Hong 2017">
 			<p>Knot Not</p>
 		</a>
