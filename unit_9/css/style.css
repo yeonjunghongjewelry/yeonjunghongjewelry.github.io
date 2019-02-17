@@ -75,6 +75,10 @@ nav {
 	text-align: center;
 	padding: 10px;
 }
+a #work_2017:hover {
+	text-decoration: underline;
+
+}
 
 .navlink:hover div {
 	max-height:500px;
@@ -188,6 +192,7 @@ img {
 #title { 
 
 	color: black;
+	font-weight: bold;
 	font-size: 20pt;
 	text-transform: uppercase;
 	letter-spacing: .7pt;
@@ -196,8 +201,9 @@ img {
  }
 #medium {
 	font-size: 12pt;
+	font-weight: normal;
 	text-transform: none;
-	letter-spacing: .5pt;
+	letter-spacing: .3pt;
 	padding-top: 20px;
 
 }
@@ -324,11 +330,12 @@ li:hover {
 		padding-bottom: 20px;
 	}
 	#title {
-		font-size: 1.2em;
-		padding-bottom: 10px;
+		font-size: 1.3em;
+		padding-bottom: 20px;
 	}
 	#medium {
-		font-size: .9em;
+		font-size: .8em;
+		padding-top: 20px;
 	}
 	#copyright {
 		font-size: .8em;
@@ -421,4 +428,10 @@ li:hover {
 	#copyright {
 		font-size: .7em;
 	}
+	.social {
+	display: flex;
+	justify-content: center;
+/*	text-align: right;*/
+	font-size: 22px;
+/*	padding-left: 25px;*/
 }
