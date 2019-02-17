@@ -11,7 +11,7 @@ body {
 }
 .clear_float:after {
 	content:"";
-	display: block;
+
 	clear: both;}
 
 .logo {
@@ -22,10 +22,14 @@ body {
 
 #menu_button {
 	display: none;
+	outline: 0;
+	background: transparent;
+	border: 0;
 }
 nav {
 
-	float: right;
+	display: flex;
+	justify-content: flex-end;
 	padding-bottom: 20px;
 
 }
@@ -45,8 +49,8 @@ nav {
 }
 
 .navlink:hover {
-	text-decoration: underline;
-	color: gray;
+	/*text-decoration: underline;*/
+	color: #ffbdc7;
 }
 
 .navlink div{
@@ -58,7 +62,8 @@ nav {
 	overflow: hidden;
 	transition:max-height 500ms;
 	z-index: 3;
-	background-color: gray;
+	background-color: #ffd3d9;
+	opacity: .9;
 	width: 80%;
 }
 
@@ -80,18 +85,7 @@ nav {
  	display: block;
  	padding-top: 20px;
  }
-
-#about {
-	color: gray;
-	font-family: 'Sarabun', sans-serif;
-	font-size: 26pt;
-	text-transform: uppercase;
-	letter-spacing: 1pt;
-	display:flex;
-	justify-content: center;
-	padding-top: 80px;
-
-} 
+ 
 #introduction {
 	font-family: 'Sarabun', sans-serif;
  	font-size: 12pt;
@@ -105,34 +99,47 @@ nav {
 img {
 	display: block;
 	width:100%;
-	padding: 10px;
+/*	padding: 10px;*/
 
 }
+#works {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .item01{
-	position: relative;
 	font-family: 'Raleway', sans-serif;
 	font-weight: bold;
 	color:white;
 	letter-spacing: 1.5px;
+	text-align: center;
 	display: block;
-	width: 33.333%;
-	float: left;
-	height: 0;
-	padding-bottom: 24.25%;
+	width: 32.333%;
+	margin-bottom: 20px;
+/*	float: left;*/
+/*	height: 0;
+	padding-bottom: 24.25%;*/
 	overflow: hidden;
-	border: 3px solid white;
+/*	border: 3px solid white;*/
 }
-.item01 img{
+.item01 figure {
+	display: block;
+	position: relative;
+}
+/*.item01 img{
 	position: absolute;
 	top:50%;
 	left:50%;
 	transform:translate(-50%,-50%);
 	height:120%;
 	width:auto;
-}
-#knot_not img {
+}*/
+/*#knot_not img {
 	height: 150%;
 }
+#chrishabana img {
+	height: 150%;*/
+/*}*/
 .item01 p{
 	position: absolute;
 	top: -100%;
@@ -153,19 +160,24 @@ img {
 }
 #two_column {
 
-	padding: 60px;
+	padding: 40px;
 }
 
 #left {
 
-	display: inline-block;
-	width: 60%;
+	float: left;
+	width: 65%;
 	padding-right: 7px;
-}     
+}   
+#left img {
+	padding-bottom: 50px;
+}  
 
 #right {
+	float: right;
 	display: inline-block;
-	width: 37%;
+	margin-left: 10px;
+	width: 30%;
 	vertical-align: top;
 	float: right;
 }
@@ -175,61 +187,62 @@ img {
 
 #title { 
 
-	color: gray;
+	color: black;
 	font-size: 20pt;
 	text-transform: uppercase;
-	letter-spacing: 1pt;
-	display:flex;
+	letter-spacing: .7pt;
+	padding-top: 4px;
+
  }
 #medium {
 	font-size: 12pt;
+	text-transform: none;
+	letter-spacing: .5pt;
+	padding-top: 20px;
 
 }
 
 footer {
-
 	margin: 0 auto;
-	bottom: 0;
-	width: 100%;
-	height: 60px;
-	padding: 1.5em 0;
-	border-top-width: 1px;
-    border-top-style: solid;
-
-}
-
-.footer {
-	position: absolute;
-	margin: 0 auto;
-	bottom: 0;
 	width: 95%;
-	height: 60px;
 	padding: 1.5em 0;
-	border-top-width: 1px;
-    border-top-style: solid;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 #copyright { 
 	display: inline-block;
 	font-family: 'Julius Sans One', sans-serif;
 	font-size: 10pt;
 }
-#instagram_logo div{
-	position: relative;
+.social {
+	display: flex;
+	text-align: right;
+	font-size: 25px;
+	padding-left: 25px;
+}
+
+li {
 	display: block;
-	float: right;
-	padding-right: 20px;
-	width: 32px;
-	height: 32px;
+	margin-right: 15px;
+	list-style: none;
+}
 
+li:hover {
+	color:#ffbdc7;
 }
-#instagram_logo img{
-	position: absolute;
-	
+.social-instagram:before {
+	content:"";
+}
 
-}
-@media only screen and (max-width:840px) {
-}
+
+/*#instagram {
+	width: 20px;
+	display: block;
+	margin-left: 5px;
+
+}*/
 
 
 @media only screen and (max-width:725px) {
@@ -242,29 +255,41 @@ footer {
 
 	nav {
 		display: none;
+		justify-content: center;
+
 	}
 	#menu_button {
 		display: block;
 		margin: 0 auto;
-		color: #A9A9A9;
+		color: gray;
 		font-family: 'Julius Sans One', sans-serif;
 		font-size: 10pt;
 		font-weight: bold;
 		text-transform: uppercase;
+		text-decoration: underline;
+		margin-bottom: 10px;
 	}
 	.navlink {
-		display: block;
-		margin: 0 auto;
+		display: inline-block;
+		width: 100%;
 		text-align: center;
-		padding: 2px;
+		padding: 3px;
 		font-size: 9pt;
-
 	}
+	.navlink:hover {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
 	.navlink div {
+		margin: 0 auto;
 		position: relative;
 		top: 0;
 		left: 0;
 		max-height: 100%;
+		background-color: none;
+		z-index: none;
+		width: 25%;
 	}
 	#about {
 	color: gray;
@@ -276,5 +301,124 @@ footer {
 	justify-content: center;
 	padding-top: 8%;
 	}
-	
+	#works {
+
+	}
+	.item01 {
+		font-weight: normal;
+		font-size: .8em;
+		letter-spacing: 0.7px;
+		text-align: center;
+		width:48%;
+	}
+	#two_column {
+		padding: 20px;
+	}
+	#left, #right {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#right {
+
+		padding-bottom: 20px;
+	}
+	#title {
+		font-size: 1.2em;
+		padding-bottom: 10px;
+	}
+	#medium {
+		font-size: .9em;
+	}
+	#copyright {
+		font-size: .8em;
+	}
+}
+@media only screen and (max-width:414px) {
+	.logo {
+		display: block;
+		width:80px;
+		margin: 0 auto;
+	}
+
+	nav {
+		display: none;
+		justify-content: center;
+
+	}
+	#menu_button {
+		display: block;
+		margin: 0 auto;
+		color: gray;
+		font-family: 'Julius Sans One', sans-serif;
+		font-size: 10pt;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: underline;
+		margin-bottom: 10px;
+	}
+	.navlink {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		padding: 3px;
+		font-size: 9pt;
+	}
+	.navlink:hover {
+	text-decoration: none;
+	color: #A9A9A9;
+}
+
+	.navlink div {
+		margin: 0 auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		max-height: 100%;
+		background-color: none;
+		z-index: none;
+		width: 25%;
+	}
+	#introduction {
+	font-family: 'Sarabun', sans-serif;
+ 	font-size: 10pt;
+ 	letter-spacing: .8px;
+ 	display: flex;
+	margin:0 auto;
+	width: 80%;
+	padding-top: 5%;
+	padding-bottom: 50px;
+	}
+	.item01 {
+		font-weight: normal;
+		font-size: .7em;
+		letter-spacing: 0.7px;
+		text-align: center;
+		width:48%;
+	}
+	#two_column {
+		padding: 10px;
+	}
+	#left, #right {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	#right {
+
+		padding-bottom: 10px;
+	}
+	#left img{
+		padding-bottom: 20px;
+	}
+	#title {
+		font-size: 1.2em;
+		padding-bottom: 10px;
+	}
+	#medium {
+		font-size: .7em;
+	}
+	#copyright {
+		font-size: .7em;
+	}
 }
