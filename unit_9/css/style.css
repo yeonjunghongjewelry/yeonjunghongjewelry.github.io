@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Julius+Sans+One|Sarabun);
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text|Raleway|Julius+Sans+One|Sarabun|Hind|Hind+Siliguri);
 
 *{
 	margin:0;
@@ -7,7 +7,8 @@
 }
 body {
 	margin:10px 30px;
-	height: 100%;
+	height: 100vh;
+	font-family: 'Hind', sans-serif;
 }
 .clear_float:after {
 	content:"";
@@ -16,7 +17,7 @@ body {
 
 .logo {
 	display: block;
-	width:100px;
+	width:80px;
 }
 
 
@@ -26,6 +27,7 @@ body {
 	background: transparent;
 	border: 0;
 }
+
 nav {
 
 	display: flex;
@@ -34,11 +36,10 @@ nav {
 
 }
 
-.navlink{
-	color: #A9A9A9;
-	font-family: 'Julius Sans One', sans-serif;
+.navlink {
+	color: gray;
 	font-size: 10pt;
-	font-weight: bold;
+/*	font-weight: bold;*/
 	text-transform: uppercase;
 	text-decoration: none;
 	letter-spacing: 2px;
@@ -54,7 +55,7 @@ nav {
 }
 
 .navlink div{
-	color: #A9A9A9;
+/*	color: #A9A9A9;*/
 	position: absolute;
 	top:35px;
 	left:15px ;
@@ -75,6 +76,11 @@ nav {
 	text-align: center;
 	padding: 10px;
 }
+
+.navlink div a:hover {
+	color: #ffd3d9;
+	background-color: white;
+}
 a #work_2017:hover {
 	text-decoration: underline;
 
@@ -89,16 +95,28 @@ a #work_2017:hover {
  	display: block;
  	padding-top: 20px;
  }
- 
-#introduction {
-	font-family: 'Sarabun', sans-serif;
- 	font-size: 12pt;
- 	letter-spacing: .8px;
- 	display: flex;
+
+#about {
 	margin:0 auto;
 	width: 67%;
 	padding-top: 10%;
-	padding-bottom: 50px;
+	padding-bottom: 280px;
+}
+
+#self_intro_1 {
+
+	font-weight: bold;
+ 	font-size: 28pt;
+ 	letter-spacing: .6pt;
+ 	line-height: 25pt;
+} 
+ 
+#self_intro_2 {
+ 	font-size: 12pt;
+ 	letter-spacing: .3pt;
+ 	line-height: 25pt;
+	padding-top: 20px;
+
  }
 img {
 	display: block;
@@ -110,10 +128,11 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding-bottom: 100px;
+
 }
 .item01{
-	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+/*	font-weight: bold;*/
 	color:white;
 	letter-spacing: 1.5px;
 	text-align: center;
@@ -130,20 +149,7 @@ img {
 	display: block;
 	position: relative;
 }
-/*.item01 img{
-	position: absolute;
-	top:50%;
-	left:50%;
-	transform:translate(-50%,-50%);
-	height:120%;
-	width:auto;
-}*/
-/*#knot_not img {
-	height: 150%;
-}
-#chrishabana img {
-	height: 150%;*/
-/*}*/
+
 .item01 p{
 	position: absolute;
 	top: -100%;
@@ -156,9 +162,7 @@ img {
 	align-items: center;
 	
 }
-#exquisite_choker, #greenery_earrings, #tied_knot, #greenery_set {
-	border: 10px solid white;
-}
+
 .item01:hover p{
 	top:0;
 }
@@ -170,8 +174,8 @@ img {
 #left {
 
 	float: left;
-	width: 65%;
-	padding-right: 7px;
+	width: 60%;
+/*	padding-right: 7px;*/
 }   
 #left img {
 	padding-bottom: 50px;
@@ -181,18 +185,14 @@ img {
 	float: right;
 	display: inline-block;
 	margin-left: 10px;
-	width: 30%;
+	width: 34%;
 	vertical-align: top;
 	float: right;
-}
-.description {
-	font-family: 'Sarabun', sans-serif;
 }
 
 #title { 
 
 	color: black;
-	font-weight: bold;
 	font-size: 20pt;
 	text-transform: uppercase;
 	letter-spacing: .7pt;
@@ -210,17 +210,21 @@ img {
 
 footer {
 	margin: 0 auto;
-	width: 95%;
 	padding: 1.5em 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
 #copyright { 
 	display: inline-block;
-	font-family: 'Julius Sans One', sans-serif;
 	font-size: 10pt;
+	letter-spacing: .4pt;
+	color: gray;
 }
 .social {
 	display: flex;
@@ -235,29 +239,22 @@ li {
 	list-style: none;
 }
 
-li:hover {
-	color:#ffbdc7;
-}
 .social-instagram:before {
 	content:"";
 }
 
+.fab {
+	color: gray;
+}
 
-/*#instagram {
-	width: 20px;
-	display: block;
-	margin-left: 5px;
+.fab:hover {
+	color: #ffbdc7;
+}
 
-}*/
 
 
 @media only screen and (max-width:725px) {
 	
-	.logo {
-		display: block;
-		width:100px;
-		margin: 0 auto;
-	}
 
 	nav {
 		display: none;
@@ -268,13 +265,16 @@ li:hover {
 		display: block;
 		margin: 0 auto;
 		color: gray;
-		font-family: 'Julius Sans One', sans-serif;
 		font-size: 10pt;
-		font-weight: bold;
 		text-transform: uppercase;
-		text-decoration: underline;
-		margin-bottom: 10px;
+		width: 100%;
+		padding-bottom:10px;
 	}
+	#menu_button.active {
+		border-bottom:1px solid gray;
+	
+	}
+
 	.navlink {
 		display: inline-block;
 		width: 100%;
@@ -294,18 +294,10 @@ li:hover {
 		left: 0;
 		max-height: 100%;
 		background-color: none;
-		z-index: none;
+/*		z-index: none;*/
 		width: 25%;
 	}
 	#about {
-	color: gray;
-	font-family: 'Sarabun', sans-serif;
-	font-size: 1.5em;
-	text-transform: uppercase;
-	letter-spacing: 1pt;
-	display:flex;
-	justify-content: center;
-	padding-top: 8%;
 	}
 	#works {
 
@@ -331,11 +323,11 @@ li:hover {
 	}
 	#title {
 		font-size: 1.3em;
-		padding-bottom: 20px;
+/*		padding-bottom: 20px;*/
 	}
 	#medium {
 		font-size: .8em;
-		padding-top: 20px;
+/*		padding-top: 20px;*/
 	}
 	#copyright {
 		font-size: .8em;
@@ -343,8 +335,7 @@ li:hover {
 }
 @media only screen and (max-width:414px) {
 	.logo {
-		display: block;
-		width:80px;
+		width:60px;
 		margin: 0 auto;
 	}
 
@@ -357,13 +348,11 @@ li:hover {
 		display: block;
 		margin: 0 auto;
 		color: gray;
-		font-family: 'Julius Sans One', sans-serif;
 		font-size: 10pt;
-		font-weight: bold;
 		text-transform: uppercase;
-		text-decoration: underline;
-		margin-bottom: 10px;
+		margin-bottom: 3px;
 	}
+
 	.navlink {
 		display: inline-block;
 		width: 100%;
@@ -387,7 +376,6 @@ li:hover {
 		width: 25%;
 	}
 	#introduction {
-	font-family: 'Sarabun', sans-serif;
  	font-size: 10pt;
  	letter-spacing: .8px;
  	display: flex;
@@ -397,7 +385,6 @@ li:hover {
 	padding-bottom: 50px;
 	}
 	.item01 {
-		font-weight: normal;
 		font-size: .7em;
 		letter-spacing: 0.7px;
 		text-align: center;
