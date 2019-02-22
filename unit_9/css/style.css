@@ -112,8 +112,11 @@ a #work_2017:hover {
 } 
  
 #self_intro_2 {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
  	font-size: 12pt;
- 	letter-spacing: .3pt;
+ 	letter-spacing: .2pt;
  	line-height: 25pt;
 	padding-top: 20px;
 
@@ -132,9 +135,9 @@ img {
 
 }
 .item01{
-/*	font-weight: bold;*/
+	text-transform: uppercase;
 	color:white;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 	text-align: center;
 	display: block;
 	width: 32.333%;
@@ -169,6 +172,7 @@ img {
 #two_column {
 
 	padding: 40px;
+
 }
 
 #left {
@@ -200,6 +204,9 @@ img {
 
  }
 #medium {
+	font-family: proxima-nova, sans-serif;
+	font-style: normal;
+	font-weight: 100;
 	font-size: 12pt;
 	font-weight: normal;
 	text-transform: none;
